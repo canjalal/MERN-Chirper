@@ -18,13 +18,14 @@ Heard features a fully functional user authentication system, complete with a de
 
 ## Message Thread Feature
 Users can create topics that open message threads, or proceed directly to an index of topics. From a side menu, they can edit and/or delete the threads that they created.
-![MyChatsDrawerScreenShot](https://user-images.githubusercontent.com/100994924/192670284-437fb40d-6aa4-4c5c-bfcd-d11f1e748f4d.png)
+<img width="350" alt="TopicDrawerScreenshot" src="https://user-images.githubusercontent.com/100994924/192670284-437fb40d-6aa4-4c5c-bfcd-d11f1e748f4d.png">
 
 Within a chat, users are anonymized except for the last five characters of their user ID. New messages are fetched at regular short intervals from the server.
 
-![TopicMessageScreenShot](https://user-images.githubusercontent.com/100994924/192670264-92079b49-52d2-4f04-9bb8-61246c826364.png)
+<img width="350" alt="TopicMessageScreenShot" src="https://user-images.githubusercontent.com/100994924/192670264-92079b49-52d2-4f04-9bb8-61246c826364.png">
 
-Topics are organized in the database so that they are affiliated with a 'user' and an array of 'messages' in Mongoose:
+Topics are organized in the database so that they are affiliated with a `user` and an array of `messages` in Mongoose:
+
 ```javascript
 const TopicSchema = mongoose.Schema(
   {
@@ -42,7 +43,7 @@ const TopicSchema = mongoose.Schema(
     ],
     ...
 ```
-In order to create messages then, the frontend must send in not only the content of the new message, but the 'topicId' of the topic the message is affiliated with. Authentication middleware grabs the 'userId' from the JSON Web Token (JWT).
+In order to create messages then, the frontend must send in not only the content of the new message, but the `topicId` of the topic the message is affiliated with. Authentication middleware grabs the `userId` from the JSON Web Token (JWT).
 ```javascript
 const createMessage = asyncHandler(async (req, res) => {
 
@@ -78,6 +79,6 @@ const createMessage = asyncHandler(async (req, res) => {
 });
 ```
 
-It is then populated with its 'topicId' before the topic is found and updated by appending the message to its list of 'messages' using 'findByIdAndUpdate()'.
+It is then populated with its `topicId` before the topic is found and updated by appending the message to its list of `messages` using `findByIdAndUpdate()`.
 
-Updating the title's title and / or mood or deleting it is simpler, involving mainly the findById and findByIdAndUpdate methods, since a new instance of a 'Message' object does not have to be created.
+Updating the title's title and / or mood or deleting it is simpler, involving mainly the findById and findByIdAndUpdate methods, since a new instance of a `Message` object does not have to be created.
