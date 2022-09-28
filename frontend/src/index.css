@@ -1,0 +1,52 @@
+/* TODO Add site wide styles */
+* {
+    box-sizing: border-box;
+    font-family: 'Lato';
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin: 0;
+    padding: 0.15vh;
+}
+
+#root {
+    background: #EDF0F4;      
+}
+
+/* .dark {
+    background: black;
+} */
+
+#entire-container {
+    max-width: 1280px;
+    width: 40vw;
+    height: 99vh;
+    margin: auto;
+    display: block;
+    background: #EDF0F4;
+    box-shadow: -1px -1px 7px #F5F5F5, -5px -4px 17px #FFFFFF, 1px 2px 5px #A0B0C5, 4px 6px 22px #C0CAD8;
+    border-radius: 5%;
+}
+/* 
+#entire-container-dark {
+    max-width: 1280px;
+    width: 40vw;
+    height: 99vh;
+    margin: auto;
+    display: block;
+    background: #4a4c4f;
+    border-radius: 5%;
+    box-shadow: inset 12.01px 12.01px 21px #444649, inset -12.01px -12.01px 21px #505255;
+} */
+
+@media screen and (max-width: 950px) {
+    body {
+        background: #EEF0F4;
+    }
+
+    #entire-container {
+        width: 95vw;
+        border-radius: 0;
+        box-shadow: none;
+        
+    }
+}

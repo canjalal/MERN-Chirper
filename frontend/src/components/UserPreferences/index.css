@@ -1,0 +1,143 @@
+/* mood preferences */
+
+.mood-header {
+        text-align: center;
+        font-size: 1.75vw;
+        letter-spacing: 0.03em;
+        padding-top: 5vh;
+        padding-bottom: 2vh;
+}
+
+.mood-button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 55vh;
+}
+
+.mood-unchecked {
+    /* background: #EDF0F4; */
+    box-shadow: -1px -1px 7px #F5F5F5, -5px -4px 17px #FFFFFF, 1px 2px 5px #A0B0C5, 4px 6px 22px #C0CAD8;
+    border-radius: 10px;
+    font-size: 1.25vw;
+    width: 20vw;
+    height: 7vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mood-checked {
+    background: #EDF0F4;
+    box-shadow: inset -1px -1px 7px #F5F5F5, inset -5px -4px 17px #FFFFFF, inset 1px 2px 5px #A0B0C5, inset 4px 6px 22px #C0CAD8;
+    border-radius: 10px;
+    font-size: 1.25vw;
+    color: #969eba;
+    width: 20vw;
+    height: 7vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mood-submit {
+    display: block;
+    margin: auto;
+    border: none;
+    background: #EDF0F4;
+    box-shadow: -1px -1px 7px #F5F5F5, -5px -4px 17px #FFFFFF, 1px 2px 5px #A0B0C5, 4px 6px 22px #C0CAD8;
+    border-radius: 10px;
+    font-size: 1.25vw;
+    color: #5a6794;
+    font-weight: bold;
+    width: 15vw;
+    height: 7vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mood-submit:hover {
+        background: #EDF0F4;
+        box-shadow: inset -1px -1px 7px #F5F5F5, inset -5px -4px 17px #FFFFFF, inset 1px 2px 5px #A0B0C5, inset 4px 6px 22px #C0CAD8;
+        border-radius: 10px;
+}
+
+#angry {
+    background-color: #d1b0a7;
+}
+
+#loved {
+    background-color: #f6dbd9;
+}
+
+#anxious {
+    background-color: #bfdcd0;
+}
+
+#sad {
+    background-color: #cdd7e6;
+}
+
+#happy {
+    background-color: #ebe2b1;
+}
+
+@media screen and (max-width: 950px) {
+    .mood-header {
+        font-size: 4.75vw;
+    }
+
+    .mood-button-container > p {
+        width: 50vw;
+        font-size: 4vw;
+    }
+
+    .mood-submit {
+        width: 35vw;
+        font-size: 3.75vw;
+    }
+}
+
+.user-modal-background {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+}
+
+.user-modal{
+    display: block;
+    position: fixed;
+    top: 25vh;
+    left: 30vw;
+    width: 40vw;
+    height: 20vw;
+    font-size: 2vw;
+    background: #EDF0F4;
+    border-radius: 2vw;
+    padding: 2.5vw;
+    text-align: center;
+    display: grid;
+    align-items: center;
+}
+
+.edit-user-button-container {
+    display: flex;
+    justify-content: space-around;
+}

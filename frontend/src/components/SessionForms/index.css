@@ -1,0 +1,108 @@
+.form-button {
+    background: #EEF0F4;
+    border: none;
+    border-radius: 40%;
+    box-shadow: 2.55vh 2.55vh 2.88vh #D9DADE, -2.55vh -2.55vh 1.52vw #FFFFFF;
+    cursor: pointer;
+}
+
+.form-input {
+    background: #EDF0F4;
+    box-shadow: -1px -1px 7px #f5f5f5, -5px -4px 17px #ffffff, 1px 2px 5px #a0b0c5, 4px 6px 22px #c0cad8;
+    width: 20vw;
+    height: 4vw;
+    font-size: 1.25vw;
+    border-radius: 2vh;
+    border-style: none;
+    padding: 15px;
+    letter-spacing: 0.1vw;
+}
+
+.session-form {
+    display: contents;
+}
+
+.session-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+}
+
+.login-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 28vh;
+}
+
+input { 
+    text-align: center; 
+}
+
+
+
+.session-form-submit-button{
+    background: #EEF0F4;
+    border: none;
+    border-radius: 40%;
+    box-shadow: 2.55vh 2.55vh 2.88vh #d9dade, -2.55vh -2.55vh 1.52vw #ffffff;
+    font-size: 14px;
+    border-radius: 2vh;
+    width: 15vw;
+    height: 4vw;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+
+.session-form-submit-button:active{
+    background: #EDF0F4;
+    box-shadow: inset -1px -1px 7px #F5F5F5, inset -5px -4px 17px #FFFFFF, inset 1px 2px 5px #A0B0C5, inset 4px 6px 22px #C0CAD8;
+    border-radius: 10px;
+    /* box-shadow: 2.55vh 2.55vh 2.88vh #d9dade, -2.55vh -2.55vh 1.52vw #ffffff; */
+}
+
+.demo-login{
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 1vw;
+}
+
+.signup-link, .login-link {
+    cursor: pointer;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1vw;
+}
+
+
+
+.form-header {
+    font-size: 2vw;
+    padding-top: 8vh;
+}
+
+@media screen and (max-width: 950px) {
+    .form-header {
+        font-size: 5vw;
+    }
+
+    .form-input {
+        width: 50vw;
+        height: 6vh;
+        font-size: 3.5vw;
+    }
+
+    .session-form-submit-button {
+        width: 35vw;
+        height: 5vh;
+        font-size: 3.5vw;
+    }
+
+        .signup-link,
+        .login-link, .demo-login {
+            font-size: 3vw;
+        }
+}

@@ -1,0 +1,17 @@
+.chat-title-container {
+  text-align: center;
+}
+
+.chat-title {
+  text-align: center;
+  font-size: 1.5vw;
+  color: #5a6794;
+}
+
+.flagged-text {
+  font-size: 0.85vw;
+}
+
+.chat-page{
+  height: fit-content;
+}
