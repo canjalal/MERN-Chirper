@@ -18,6 +18,7 @@ Heard features a fully functional user authentication system, complete with a de
 
 ## Message Thread Feature
 Users can create topics that open message threads, or proceed directly to an index of topics. From a side menu, they can edit and/or delete the threads that they created.
+
 <img width="350" alt="TopicDrawerScreenshot" src="https://user-images.githubusercontent.com/100994924/192670284-437fb40d-6aa4-4c5c-bfcd-d11f1e748f4d.png">
 
 Within a chat, users are anonymized except for the last five characters of their user ID. New messages are fetched at regular short intervals from the server.
